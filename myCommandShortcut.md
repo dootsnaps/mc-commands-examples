@@ -8,7 +8,7 @@
 
 4. Next define the actual command you want to type to activate your shortcut. For now we will just use `/yourCommandName`. To do this, run `/mycmd-edit yourCommandName command /yourCommandName`
 
-5. Now we can start adding the commands that will run when you run `/yourCommandName`. We will use _yourFirstCommand_ to symbolize the entire command that you would normally type into the chat. To add a command, run `/mycmd-edit yourCommandName runcmd add /yourFirstCommand`
+5. Now we can start adding the commands that will run when you run `/yourCommandName`. We will use _yourFirstCommand_ to symbolize the entire command that you would normally type into the chat, including the arguments. To add a command, run `/mycmd-edit yourCommandName runcmd add yourFirstCommand`
 
 6. Repeat step 5 until all your commands are added (e.g. _yourFirstCommand_, _yourSecondCommand_ etc...)
 
