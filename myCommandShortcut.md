@@ -33,3 +33,9 @@
 Bonus: Running `/mycmd check brushstone` now gives us an output telling us the command's settings:
 
 ![Image](https://i.imgur.com/CQQB3ZR.png)
+
+Notice the last line: `Registered (Real Command): false`. This means that when you type the command in chat to run it, the server will not give a tab-complete for it. However, the command will still run, don't worry! To make the command "registered" we can run:
+
+`/mycmd-edit brushstone register true`
+
+This will register the command, but it won't be effective until the next server restart. Hence, don't expect this to actually work right away!
