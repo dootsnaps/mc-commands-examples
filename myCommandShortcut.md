@@ -62,7 +62,7 @@ If we want, to make the command "registered" we can run:
 
 This will register the command, but unfortunately it won't be effective until the next server restart. Hence, don't expect this to actually work right away!
 
-# Advanced: Requiring Arguments
+## Advanced: Requiring Arguments
 
 Letting us run a list of commands with a shortcut is already great, but what if we could also pass arguments to those commands, such as a desired brush radius? Here's how to do it:
 
