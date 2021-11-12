@@ -66,6 +66,17 @@ This will register the command, but unfortunately it won't be effective until th
 
 Letting us run a list of commands with a shortcut is already great, but what if we could also pass arguments to those commands, such as a desired brush radius? Here's how to do it:
 
+1. `/mycmd-edit yourCommandName require_all_arguments true`
+2. Replace the arguments you want to pass in the target command with the variables `$arg1`, `$arg2`, etc. Our goal is to change the command from, for example, `/thisIsACommand 50 700 20` to `/thisIsACommand $arg1 700 $arg2`, which would require the user to run `/yourCommandName <arg1> <arg2>` to properly fill those variables.
+
+If you are adding the command as a new `runcmd`, use `/mycmd-edit yourCommmandName runcmd add /thisIsACommand $arg1 700 $arg2`. 
+
+If you want to edit a previously-added command, use `/mycmd-edit yourCommandName runcmd <index> /thisIsACommand $arg1 700 $arg2`, where `<index>` is replaced by the number of the command which you want to edit, starting from 1. So if the command we want to edit is the second on the list, we would use `/mycmd-edit yourCommandName runcmd 2 /thisIsACommand $arg1 700 $arg2`.
+
+3. Now when the user runs, for example, `/yourCommandName 30 70`, the `/thisIsACommand` sub-command on `yourCommandName`'s `runcmd` list would be run as `/thisIsACommand 30 700 70`, since we filled in 30 and 70 for `$arg1` and `$arg2`.
+
+**Example using our stone brush:**
+
 1. `/mycmd-edit brushstone require_all_arguments true` makes sure the user inputs the argument we want
 2. `/mycmd-edit brushstone runcmd 1 //brush sphere stone $arg1` replaces the radius (previously 100) with the first argument typed by the user
 3. Now when we run /brushstone we will need to pass the radius we want: `/brushstone 50` will give us the same brush as before, but now it has a radius of 50 blocks!
