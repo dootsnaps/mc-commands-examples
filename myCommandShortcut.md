@@ -91,3 +91,9 @@ Note: if you don't set `require_all_arguments` to `true`, in this particular exa
 4.  `/mycmd-edit brushangle runcmd add //mask [$arg3]&[#angle[$arg4d][$arg5d]]`, where arg3 = list of materials to replace (comma-separated, e.g. dirt,grass_block,stone), arg4 = lower angle bound in degrees, arg 5 = upper angle bound in degrees
 5.  `/mycmd-edit brushangle require_all_arguments true`
 6.  Example usage: `/brushangle snow 30 grass_block,dirt 30 70` creates a brush of radius 30 that replaces all dirt and grass blocks on the terrain surface that are between a slope of 30 degrees and 70 degrees with snow blocks.
+
+There is a problem with this however! The materials you want to replace are normally comma-separated in FAWE masks, but MyCommand disallowed commas in arguments, so you can actually only specify one material to be replaced at a time. We can easily fix this by disabling the command's regex filter:
+
+7. `/mycmd-edit brushangle regex_pattern .*`
+
+Now it should work just fine!
