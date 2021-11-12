@@ -61,3 +61,13 @@ If we want, to make the command "registered" we can run:
 `/mycmd-edit brushstone register true`
 
 This will register the command, but unfortunately it won't be effective until the next server restart. Hence, don't expect this to actually work right away!
+
+#Advanced: Requiring Arguments
+
+Letting us run a list of commands with a shortcut is already great, but what if we could also pass arguments to those commands, such as a desired brush radius? Here's how to do it:
+
+1. `/mycmd-edit brushstone require_all_arguments true` makes sure the user inputs the argument we want
+2. `/mycmd-edit brushstone runcmd 1 //brush sphere stone $arg1` replaces the radius (previously 100) with the first argument typed by the user
+3. Now when we run /brushstone we will need to pass the radius we want: `/brushstone 50` will give us the same brush as before, but now it has a radius of 50 blocks!
+
+Note: if you don't set `require_all_arguments` to `true`, in this particular example it will still work. Why? Because FAWE has a default brush radius of 5 blocks when a radius is not specified by the user. So in this case it's not strictly necesarry. As long as 1) you are only passing a single argument & 2) that argument has a default value in the target command, you can leave `require_all_arguments` set to `false`. 
