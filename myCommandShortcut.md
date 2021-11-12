@@ -10,7 +10,7 @@
 
 5. Now we can start adding the commands that will run when you run `/yourCommandName`. We will use _yourFirstCommand_ to symbolize the entire command that you would normally type into the chat, including the arguments. To add a command, run `/mycmd-edit yourCommandName runcmd add yourFirstCommand`
 
-6. Repeat step 5 until all your commands are added (e.g. _yourFirstCommand_, _yourSecondCommand_ etc...)
+6. Repeat step 5 until all your commands are added (e.g. _yourFirstCommand_, _yourSecondCommand_ etc...). Make sure to add them in the order that you want them to run!
 
 7. Run your command to test it by simply running `/yourCommandName`
 
