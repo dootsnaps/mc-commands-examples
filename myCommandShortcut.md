@@ -1,4 +1,4 @@
-##How to use MyCommand to create a custom command shortcut:
+# How to use MyCommand to create a custom command shortcut:
 
 1. Decide what you want to call your command. This will be _yourCommandName_.
 
@@ -14,7 +14,7 @@
 
 7. Run your command to test it by simply running `/yourCommandName`
 
-##Example - Create a spherical radius 100 brush that replaces all grass, snow, and dirt blocks on a slope between 50 and 90 degrees with stone:
+## Example - Create a spherical radius 100 brush that replaces all grass, snow, and dirt blocks on a slope between 50 and 90 degrees with stone:
 
 1. Let's call this "brushstone"
 
