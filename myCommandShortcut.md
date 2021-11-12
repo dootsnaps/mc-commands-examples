@@ -1,4 +1,4 @@
-# How to use MyCommand to create a custom command shortcut:
+# How to use MyCommand to create a custom command shortcut
 
 1. Decide what you want to call your command. This will be _yourCommandName_.
 
