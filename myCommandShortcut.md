@@ -16,17 +16,24 @@
 
 ## Example - Create a spherical radius 100 brush that replaces all grass, snow, and dirt blocks on a slope between 50 and 90 degrees with stone:
 
+Normally to do this, you would have to manually type (or copy-paste) the required FAWE commands into the chat to bind the brush that you want to the tool that you are holding. In this case, the commands are:
+
+`//brush sphere stone 100`
+` //mask [grass_block,snow_block,dirt]&[#angle[50d][90d]]`
+
+Typing all that every time you re-log onto the server is a pain! Let's create a shortcut using the above method that will run both those commands for us with a simple alias:
+
 1. Let's call this "brushstone"
 
 2. `/mycmd check brushstone` says "No command found with this ID." - Good!
 
-3. `/mycmd-edit brushstone type RUN_COMMAND`
+3. `/mycmd-edit brushstone type RUN_COMMAND` sets the command to "run command" type.
 
-4. `/mycmd-edit brushstone command /brushstone`
+4. `/mycmd-edit brushstone command /brushstone` binds the command to `/brushstone`.
 
-5. `/mycmd-edit brushstone runcmd add //brush sphere stone 100` //first command to run
+5. `/mycmd-edit brushstone runcmd add //brush sphere stone 100` runs our first FAWE command.
 
-6. `/mycmd-edit brushstone runcmd add //mask [grass_block,snow_block,dirt]&[#angle[50d][90d]]`
+6. `/mycmd-edit brushstone runcmd add //mask [grass_block,snow_block,dirt]&[#angle[50d][90d]]` runs our second FAWE command.
 
 7. Holding a tool, in my case a golden sword, run `/brushstone` to test. It will give you the output of the FAWE commands:
 
