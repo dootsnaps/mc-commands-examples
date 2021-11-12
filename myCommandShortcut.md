@@ -48,7 +48,7 @@ Only the steep slopes of the terrain have been replaced with stone! Exactly what
 
 
 
-# Bonus: Running `/mycmd check brushstone` now gives us an output telling us the command's settings:
+### Bonus: Running `/mycmd check brushstone` now gives us an output telling us the command's settings:
 
 ![Image](https://i.imgur.com/CQQB3ZR.png)
 
