@@ -29,3 +29,7 @@
 6. `/mycmd-edit brushstone runcmd add //mask [grass_block,snow_block,dirt]&[#angle[50d][90d]]`
 
 7. holding a tool, run `/brushstone` to test!
+
+Bonus: Running `/mycmd check brushstone` now gives us an output telling us the command's settings:
+
+![Image](https://i.imgur.com/CQQB3ZR.png)
