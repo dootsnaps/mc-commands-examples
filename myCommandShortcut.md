@@ -73,7 +73,7 @@ If you are adding the command as a new `runcmd`, use `/mycmd-edit yourCommmandNa
 
 If you want to edit a previously-added command, use `/mycmd-edit yourCommandName runcmd <index> /thisIsACommand $arg1 700 $arg2`, where `<index>` is replaced by the number of the command which you want to edit, starting from 1. So if the command we want to edit is the second on the list, we would use `/mycmd-edit yourCommandName runcmd 2 /thisIsACommand $arg1 700 $arg2`.
 
-3. Now when the user runs, for example, `/yourCommandName 30 70`, the `/thisIsACommand` sub-command on `yourCommandName`'s `runcmd` list would be run as `/thisIsACommand 30 700 70`, since we filled in 30 and 70 for `$arg1` and `$arg2`.
+Now when the user runs, for example, `/yourCommandName 30 70`, the `/thisIsACommand` sub-command on `yourCommandName`'s `runcmd` list would be run as `/thisIsACommand 30 700 70`, since we filled in 30 and 70 for `$arg1` and `$arg2`.
 
 **Example using our stone brush:**
 
