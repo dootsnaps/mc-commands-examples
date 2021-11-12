@@ -28,14 +28,28 @@
 
 6. `/mycmd-edit brushstone runcmd add //mask [grass_block,snow_block,dirt]&[#angle[50d][90d]]`
 
-7. holding a tool, run `/brushstone` to test!
+7. Holding a tool, in my case a golden sword, run `/brushstone` to test. It will give you the output of the FAWE commands:
 
-Bonus: Running `/mycmd check brushstone` now gives us an output telling us the command's settings:
+![Image](https://i.imgur.com/gj3stTT.png)
+
+And when we right-click some terrain while holding our golden sword:
+
+![Image](https://i.imgur.com/ZmP1naX.png)
+
+Only the steep slopes of the terrain have been replaced with stone! Exactly what we wanted.
+
+
+
+# Bonus: Running `/mycmd check brushstone` now gives us an output telling us the command's settings:
 
 ![Image](https://i.imgur.com/CQQB3ZR.png)
 
-Notice the last line: `Registered (Real Command): false`. This means that when you type the command in chat to run it, the server will not give a tab-complete for it. However, the command will still run, don't worry! To make the command "registered" we can run:
+Notice the last line: `Registered (Real Command): false`. This means that when you type the command in chat to run it, the server will yell at you about an "Unknown or incomplete command" while you are typing it into the chat, and will not give a tab-complete for it. However, the command will still run, don't worry! 
+
+![Image](https://i.imgur.com/fUoZfvV.png)
+
+If we want, to make the command "registered" we can run:
 
 `/mycmd-edit brushstone register true`
 
-This will register the command, but it won't be effective until the next server restart. Hence, don't expect this to actually work right away!
+This will register the command, but unfortunately it won't be effective until the next server restart. Hence, don't expect this to actually work right away!
