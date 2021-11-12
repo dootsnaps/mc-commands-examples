@@ -20,7 +20,7 @@ Normally to do this, you would have to manually type (or copy-paste) the require
 
 `//brush sphere stone 100`
 
-` //mask [grass_block,snow_block,dirt]&[#angle[50d][90d]]`
+`//mask [grass_block,snow_block,dirt]&[#angle[50d][90d]]`
 
 Typing all that every time you re-log onto the server is a pain! Let's create a shortcut using the above method that will run both those commands for us with a simple alias:
 
