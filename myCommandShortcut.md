@@ -85,9 +85,9 @@ Note: if you don't set `require_all_arguments` to `true`, in this particular exa
 
 ## Example 2: A brush that paints the surface between user-specified angles with a user-specified material
 
-1. `/mycmd-edit brushangle RUN_COMMAND`
+1. `/mycmd-edit brushangle typeRUN_COMMAND`
 2.  `/mycmd-edit brushangle command /brushangle`
 3.  `/mycmd-edit brushangle runcmd add //brush surface $arg1 $arg2`, where arg1 = material to place on surface, arg2 = brush radius
 4.  `/mycmd-edit brushangle runcmd add //mask [$arg3]&[#angle[$arg4d][$arg5d]]`, where arg3 = list of materials to replace (comma-separated, e.g. dirt,grass_block,stone), arg4 = lower angle bound in degrees, arg 5 = upper angle bound in degrees
-5.  `/mycmd-edit brushangle require_all_arguments true
+5.  `/mycmd-edit brushangle require_all_arguments true`
 6.  Example usage: `/brushangle snow 30 grass_block,dirt 30 70` creates a brush of radius 30 that replaces all dirt and grass blocks on the terrain surface that are between a slope of 30 degrees and 70 degrees with snow blocks.
