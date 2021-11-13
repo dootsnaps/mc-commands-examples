@@ -38,11 +38,11 @@ Typing all that every time you re-log onto the server is a pain! Let's create a 
 
 7. Holding a tool, in my case a golden sword, run `/brushstone` to test. It will give you the output of the FAWE commands:
 
-![Image](https://i.imgur.com/gj3stTT.png)
+![Minecraft text chat screenshot showing the FAWE output from the command that we just made. It reads: "Equipped brush sphere. Run /brush unbind while holding the item to unbind it. Brush mask set."](https://i.imgur.com/gj3stTT.png)
 
 And when we right-click some terrain while holding our golden sword:
 
-![Image](https://i.imgur.com/ZmP1naX.png)
+![Minecraft screenshot showing a grass hill built on a flat world, with the steep slopes made of stone](https://i.imgur.com/ZmP1naX.png)
 
 Only the steep slopes of the terrain have been replaced with stone! Exactly what we wanted.
 
@@ -50,11 +50,11 @@ Only the steep slopes of the terrain have been replaced with stone! Exactly what
 
 ### Bonus: Running `/mycmd check brushstone` now gives us an output telling us the command's settings:
 
-![Image](https://i.imgur.com/CQQB3ZR.png)
+![Screenshot showing output of the "/mycmd check brushstone" command, which lists all the settings for the command as a table](https://i.imgur.com/CQQB3ZR.png)
 
 Notice the last line: `Registered (Real Command): false`. This means that when you type the command in chat to run it, the server will yell at you about an "Unknown or incomplete command" while you are typing it into the chat, and will not give a tab-complete for it. However, the command will still run, don't worry! 
 
-![Image](https://i.imgur.com/fUoZfvV.png)
+![Minecraft text chat screenshot, in the input field it says "/brushstone" in red text, and there is a pop-up message that reads "Unknown or incomplete command, see below for error at position 1"](https://i.imgur.com/fUoZfvV.png)
 
 If we want, to make the command "registered" we can run:
 
